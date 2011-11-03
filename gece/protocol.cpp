@@ -169,7 +169,7 @@ void init_led( byte x,     // X-coordinate of LED
 // (0,1), the third is (2,0), (1,1) and (0,2)... the loop inside this function expolits this
 // to program the LEDs.
 //
-// The actual display is wired as follows (ignoring the first LED of the 50)
+// The actual display is wired as follows 
 //
 // 21 33 34 42 43 47 48
 // 20 22 32 35 41 44 46
@@ -207,11 +207,7 @@ void protocol_init()
   // This is done so we see that the bus is low before we do anything on it
   
   delay( 1000 );
-  
-  // The first LED on the string is (7,0) as it is not on the display itself.
-  
-  init_led( 7, 0 );
-  
+    
   // See comment preceding this function for explanation of this loop
   
   for ( int sum = 0; sum <= 12; ++sum ) {
