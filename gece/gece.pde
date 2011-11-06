@@ -21,6 +21,12 @@ void setup()
 
 void loop()
 {
+  font_scroll( "Hello ", 15, 0, 0, MAX_BRIGHTNESS );
+  font_scroll( "World ",  0, 15, 0, MAX_BRIGHTNESS );
+  
+  delay( 1000 );
+  frame_init();
+  
   face_show( FACE_NORMAL, 14, 14, 0, MAX_BRIGHTNESS );  
   delay( 1000 );
   face_show( FACE_LEFT,   14, 14, 0, MAX_BRIGHTNESS );  
@@ -45,5 +51,13 @@ void loop()
   delay( 1000 );
   face_show( FACE_SHOUT,  14, 14, 0, MAX_BRIGHTNESS );  
   delay( 1000 );
+  
+  frame_init();
+  
+  font_scroll( "Thanks ", 0, 0, 15, MAX_BRIGHTNESS );
+  font_scroll( "GE ",  13, 13, 13, MAX_BRIGHTNESS );
+  
+  delay( 1000 );
+  frame_init();
 }
 

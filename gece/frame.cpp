@@ -41,7 +41,6 @@ void frame_mirror()
 
 // frame_init: Sets up the made frame buffer (all pixels off) and mirrors
 // that to the actual display
-
 void frame_init()
 {
   for ( byte x = 0; x < DISPLAY_WIDTH * 2; ++x ) {
@@ -70,7 +69,6 @@ void frame_init()
 }
 
 // frame_scroll: scroll the frame buffer left one column
-
 void frame_scroll()
 {
   for ( byte x = 1; x < DISPLAY_WIDTH * 2; ++x ) {
